@@ -4,7 +4,7 @@
   <label>Name</label>
   <input type="text" id="figure_name" name="figure[name]" value="<%= @figure.name %>"><br><br>
   
-  <label>Edit Landmarks:</label>
+  <label>Edit Landmarks:</label><br>
   
   <% Landmark.all.each do |landmark| %>
   <label><%= landmark.name %></label>
@@ -13,7 +13,7 @@
   <label>Add New Landmark:</label>
   <input type="text" id="new_landmark" name="landmark[name]"><br><br>
   
-  <label>Edit Titles:</label>
+  <label>Edit Titles:</label><br>
   
   <% Title.all.each do |title| %>
   <label><%= title.name %></label>
