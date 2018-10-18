@@ -15,8 +15,8 @@ class LandmarksController < ApplicationController
     erb :'landmarks/show'
   end 
   
-  post '/landmarks' do 
-    @landmarks = Landmark.find
-  end 
+  # post '/landmarks' do 
+  #   @landmarks = Landmark.find
+  # end 
   
 end
