@@ -10,7 +10,7 @@
   <label><%= landmark.name %></label>
   <input type="checkbox" name="figure[landmark_id][]" value="<%= landmark.id %>" id="<%= landmark.name %>" <%='checked' if @figure.landmarks.include?(landmark) %>>
   <% end %>
-  <label>Add New:</label>
+  <label>Add New Landmark:</label>
   <input type="text" id="new_landmark" name="landmark[name]"><br><br>
   
   <label>Edit Titles:</label>
@@ -19,6 +19,8 @@
   <label><%= title.name %></label>
   <input type="checkbox" name="figure[title_id][]" value="<%= title.id %>" id=" <%= title.name %>"<%= 'checked' if @figure.titles.include?(title) %>>
   <% end %>
+  <label>Add New Title:</label>
+  <input type="text" id="new_title" name="title[name]"><br><br>
   
   
 </form>
