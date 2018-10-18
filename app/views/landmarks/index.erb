@@ -3,11 +3,7 @@
   <tr>
     <% @landmarks.each do |landmark| %>
       <td align="center"><a href="/landmarks/<landmark.id %>"><%= landmark.name %></a>
-      <ul>
-        <%landmark.titles.each do |title|%>
-        <li><%=title.name%></li>
-        <%end%>
-      </ul>
+      
      </tr> </td>
   <% end %>
 </table>
