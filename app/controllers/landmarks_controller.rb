@@ -22,7 +22,7 @@ class LandmarksController < ApplicationController
   
   post '/landmarks' do 
     @landmarks = Landmark.create(params['landmark'])
-    
+    unless params[:]
   end 
   
 end
