@@ -5,6 +5,8 @@ class LandmarksController < ApplicationController
     erb :'landmarks/index'
   end 
   
-  get '/landmarks/'
+  get '/landmarks/:id' do 
+    erb :'landmarks/show'
+  end 
   
 end
