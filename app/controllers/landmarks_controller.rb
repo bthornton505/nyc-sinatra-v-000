@@ -29,4 +29,8 @@ class LandmarksController < ApplicationController
     redirect to "/landmarks/#{@landmark.id}"
   end 
   
+  post '/landmarks' do 
+    
+  end 
+  
 end
