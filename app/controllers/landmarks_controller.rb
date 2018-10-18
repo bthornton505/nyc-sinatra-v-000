@@ -26,7 +26,7 @@ class LandmarksController < ApplicationController
     @landmark.year_completed = params['landmark']['year_completed']
     @landmark.save
     
-    redirect to '/landmarks/#{'
+    redirect to "/landmarks/#{@landmark.id}"
   end 
   
 end
