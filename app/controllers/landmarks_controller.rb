@@ -16,7 +16,7 @@ class LandmarksController < ApplicationController
   end 
   
   post '/landmarks' do 
-    @landmarks = Landmark.find
+    @landmarks = Landmark.find(params[:id])
   end 
   
 end
